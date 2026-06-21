@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIスキル診断 | DXリテラシー標準 / DX推進スキル標準対応</title>
+  <meta name="description" content="DXリテラシー標準・DX推進スキル標準を参考に、AIスキル習得度、活かせる領域、学習ギャップ、推奨講座を可視化する診断アプリです。" />
+  <meta property="og:title" content="AIスキル診断" />
+  <meta property="og:description" content="AIスキルの現在地を100点満点で可視化し、次に学ぶべき講座を提案します。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/hero-ai-skill.jpg" />
+  <meta name="theme-color" content="#07192f" />
+  <link rel="icon" href="./assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="./assets/icon-192.png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="preload" as="image" href="./assets/hero-ai-skill.jpg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="メインメニュー">
+    <a class="side-brand" href="#home" aria-label="AIスキル診断トップへ">
+      <span class="brand-mark">☷</span>
+      <span><b>AIスキル診断</b><small>Powered by DX Standards</small></span>
+    </a>
+    <nav class="side-nav">
+      <a class="active" href="#home"><span>⌂</span>ホーム</a>
+      <a href="#diagnosis"><span>☀</span>診断をはじめる</a>
+      <a href="#result"><span>◉</span>診断結果</a>
+      <a href="#skillmap"><span>♙</span>スキルマップ</a>
+      <a href="#courses"><span>▣</span>おすすめ講座</a>
+      <a href="#plan"><span>⇩</span>レポート出力</a>
+      <a href="#career"><span>♚</span>AIキャリア診断</a>
+      <a href="#settings"><span>⚙</span>設定</a>
+    </nav>
+    <div class="side-promo">
+      <b>スキルを磨いて<br>未来のキャリアを<br>切り拓こう！</b>
+      <p>あなたの可能性は、AIと共に無限に広がる。</p>
+      <a href="#diagnosis">詳しく見る</a>
+      <img src="./assets/career-up.jpg" alt="AIキャリアの活用イメージ" />
+    </div>
+  </aside>
+
+  <main id="home" class="app-shell">
+    <section class="hero-board">
+      <div class="hero-image">
+        <img src="./assets/hero-ai-skill.jpg" alt="AIスキル診断のメインビジュアル" />
+        <div class="hero-copy">
+          <h1>AIスキル診断</h1>
+          <p class="lead">あなたのAIスキルを可視化し、<br>最適な学びとキャリアを見つけよう</p>
+          <p>経済産業省・IPAの「デジタルスキル標準」を参照したAIスキル診断で、あなたの現在地を正しく把握できます。</p>
+          <div class="standard-badges">
+            <span>✓ DXリテラシー標準 対応</span>
+            <span>✓ DX推進スキル標準 対応</span>
+            <span>✓ AI活用・自動化・ガバナンスを統合判定</span>
+          </div>
+          <div class="hero-kpi" aria-label="診断の特徴">
+            <span>24 Questions</span><span>6 Skill Domains</span><span>AI Skill Passport</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="sample-score premium-card">
+        <div class="card-head"><h2>あなたのAIスキルスコア</h2><span>ⓘ</span></div>
+        <div class="sample-score-body">
+          <div class="ring-sample"><span>72</span><small>/100</small></div>
+          <div class="sample-level">
+            <p>レベル</p><b>上級手前</b><div class="stars">★★★★☆</div>
+            <p>総合評価</p><span>AI活用を主体的に推進できるスキルが身についています</span>
+          </div>
+        </div>
+        <div class="score-breakdown">
+          <span><b>▣</b>リテラシー<em>78/100</em></span>
+          <span><b>▥</b>データ活用<em>68/100</em></span>
+          <span><b>⚙</b>AI活用<em>72/100</em></span>
+          <span><b>⌘</b>開発・実装<em>65/100</em></span>
+          <span><b>♢</b>マネジメント<em>75/100</em></span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="start-row premium-card">
+      <div class="step active"><small>STEP 1</small><b>基本情報入力</b><span>約1分</span></div>
+      <i>›</i>
+      <div class="step"><small>STEP 2</small><b>AIスキル診断</b><span>約15分</span></div>
+      <i>›</i>
+      <div class="step"><small>STEP 3</small><b>結果分析</b><span>約2分</span></div>
+      <i>›</i>
+      <div class="step"><small>STEP 4</small><b>おすすめ提案</b><span>約1分</span></div>
+      <i>›</i>
+      <div class="step"><small>STEP 5</small><b>レポート確認</b><span>約1分</span></div>
+      <a class="start-button" href="#diagnosis">診断をはじめる（約20分）<span>›</span></a>
+      <p>途中保存できます</p>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="premium-card course-preview">
+        <div class="card-head"><h2>あなたにおすすめの講座</h2><a href="#courses">すべて見る</a></div>
+        <div class="preview-tabs"><span class="active">学生・生徒向け<br><small>AI講座 for education</small></span><span>社会人・企業向け<br><small>企業向けAI講座</small></span></div>
+        <div class="preview-courses">
+          <article><img src="./assets/student-learning.jpg" alt="AI・データサイエンス入門"><span>おすすめ</span><h3>AI・データサイエンス入門<br>for Education</h3><p>AIの基礎からデータ活用まで、実践的に学べる入門講座</p><small>受講時間：10時間</small></article>
+          <article><img src="./assets/course-07-cursor.jpg" alt="Python AI開発基礎講座"><h3>Python×AI開発基礎講座<br>for Education</h3><p>Pythonを使ったAI開発の基礎をハンズオンで習得</p><small>受講時間：18時間</small></article>
+          <article><img src="./assets/course-01-genai.jpg" alt="生成AI活用実践講座"><h3>生成AI活用実践講座<br>for Business</h3><p>生成AIをビジネスで活用するための実践スキルを習得</p><small>受講時間：12時間</small></article>
+          <article><img src="./assets/course-05-project.jpg" alt="AIプロジェクト推進講座"><h3>AIプロジェクト推進講座<br>for Business</h3><p>AIプロジェクトを成功に導くための実践ノウハウを学ぶ</p><small>受講時間：15時間</small></article>
+        </div>
+      </article>
+
+      <aside class="right-stack">
+        <article class="premium-card scene-card">
+          <div class="card-head"><h2>AIスキルを活かせるシーン</h2><a href="#skillmap">もっと見る</a></div>
+          <div class="scene-list">
+            <figure><img src="./assets/business-learning.jpg" alt="業務効率化"><figcaption><b>業務効率化</b><span>自動化・生産性向上</span></figcaption></figure>
+            <figure><img src="./assets/market-reference-crop.jpg" alt="データ分析"><figcaption><b>データ分析・意思決定</b><span>データドリブン経営</span></figcaption></figure>
+            <figure><img src="./assets/career-up.jpg" alt="新規サービス開発"><figcaption><b>新規サービス開発</b><span>イノベーション創出</span></figcaption></figure>
+          </div>
+        </article>
+        <article class="premium-card value-widget">
+          <div class="card-head"><h2>年収アップの可能性（参考）</h2><a href="#career">もっと見る</a></div>
+          <div class="income-row"><span><small>現在の想定年収</small><b>520万円</b></span><i>➜</i><span><small>スキルアップ後の想定年収</small><b>720万円</b><em>+200万円（+38%）</em></span></div>
+          <h3>市場価値の高いAI人材の特徴</h3>
+          <ul><li>AIを活用した課題解決ができる</li><li>データに基づいた意思決定ができる</li><li>AIプロジェクトを推進できる</li><li>ビジネスにAIを組み込める</li></ul>
+        </article>
+      </aside>
+    </section>
+
+    <section id="skillmap" class="framework-section premium-card">
+      <div class="section-heading">
+        <div class="section-label">Skill Map</div>
+        <h2>診断設計の参照軸</h2>
+        <p>全ビジネスパーソン向けのDXリテラシー標準と、DX推進人材向けのDX推進スキル標準を参考に、AI活用に必要なスキルを6領域に再整理しています。</p>
+      </div>
+      <div class="framework-grid">
+        <div><span>01</span><b>AI基礎理解</b><p>AIの得意・不得意、生成AIの仕組み、リスク、使い所を理解する。</p></div>
+        <div><span>02</span><b>プロンプト活用</b><p>目的に応じて指示を設計し、要約・調査・文書作成・思考整理に使う。</p></div>
+        <div><span>03</span><b>業務改善</b><p>業務プロセスを分解し、AIで短縮・自動化・品質向上できる箇所を見つける。</p></div>
+        <div><span>04</span><b>データ活用</b><p>データを読み解き、示唆・意思決定・レポート作成に活かす。</p></div>
+        <div><span>05</span><b>開発・自動化</b><p>ノーコード、AIコーディング、Bot、エージェント設計に展開する。</p></div>
+        <div><span>06</span><b>ガバナンス</b><p>安全利用、権利、個人情報、社内ルール、品質管理を理解する。</p></div>
+      </div>
+    </section>
+
+    <section id="diagnosis" class="diagnosis-panel premium-card">
+      <div class="section-heading compact">
+        <div class="section-label">AI Skill Check</div>
+        <h2>AIスキル診断をはじめる</h2>
+        <p>最も近い状態を選んでください。専門職でなくても回答できるように、日常業務・学習場面に寄せた設問にしています。</p>
+      </div>
+
+      <form id="diagnosisForm" class="diagnosis-form">
+        <section class="form-panel profile-panel">
+          <h3>1. 基本情報入力</h3>
+          <div class="type-toggle" role="radiogroup" aria-label="利用者タイプ">
+            <label><input type="radio" name="userType" value="adult" checked><span>社会人</span></label>
+            <label><input type="radio" name="userType" value="student"><span>生徒・学生</span></label>
+          </div>
+          <div class="field-grid">
+            <label>お名前またはニックネーム<input name="personName" type="text" placeholder="例：山田 太郎" /></label>
+            <label>所属・学校・会社<input name="organization" type="text" placeholder="例：営業企画部 / 高校2年" /></label>
+            <label>現在の立場<select name="currentRole"><option>経営・事業責任者</option><option>管理職・PM</option><option>営業・企画</option><option>管理・バックオフィス</option><option>開発・IT</option><option>教員・教育関係者</option><option>高校生</option><option>大学生・専門学生</option><option>その他</option></select></label>
+            <label>参考：現在の年収・報酬額<input name="baseIncome" type="number" min="0" step="10" placeholder="例：520（万円）" /></label>
+          </div>
+        </section>
+
+        <section class="form-panel interest-panel">
+          <h3>2. 活かしたいこと</h3>
+          <p class="hint">複数選択できます。選択内容に応じて、目標レベルと推奨講座が変わります。</p>
+          <div id="interestList" class="chip-grid"></div>
+        </section>
+
+        <section class="form-panel question-panel">
+          <div class="question-header">
+            <div>
+              <h3>3. AIスキル診断</h3>
+              <p class="hint">1＝まだできない / 3＝説明を受ければできる / 5＝自力で実務・学習に使える</p>
+            </div>
+            <button class="small-button" type="button" id="demoFill">デモ回答を入力</button>
+          </div>
+          <div class="progress-shell" aria-label="回答進捗"><span id="answerProgress"></span></div>
+          <div id="questionList" class="question-list"></div>
+        </section>
+
+        <div class="form-actions sticky-actions">
+          <button class="secondary-action" type="button" id="saveDraft">一時保存</button>
+          <button class="primary-action" type="submit">診断結果を見る</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="result" class="result-section hidden" aria-live="polite">
+      <div class="result-hero premium-card">
+        <div class="result-hero-main">
+          <div class="section-label">AI Skill Passport</div>
+          <h2 id="resultTitle">診断結果</h2>
+          <p id="resultLead">AIスキルの現在地と、次に伸ばす領域を可視化しました。</p>
+          <div class="rank-strip">
+            <span id="rankBadge">Rank --</span>
+            <span id="percentileBadge">上位 --%</span>
+            <span id="nextQuestBadge">Next Quest：--</span>
+          </div>
+          <div class="result-actions"><button class="secondary-action" type="button" id="copyResult">結果をコピー</button><button class="secondary-action" type="button" id="downloadJson">JSON保存</button><button class="primary-action" type="button" id="printReport">印刷 / PDF</button></div>
+        </div>
+        <div class="result-hero-visual"><img src="./assets/result-dashboard.jpg" alt="診断結果ダッシュボードの実写イメージ" /></div>
+      </div>
+      <div class="unlock-grid" id="unlockGrid"></div>
+      <div class="result-grid-main">
+        <article class="score-card large-card premium-card"><canvas id="scoreCanvas" width="260" height="260" aria-label="AIスキル習得度"></canvas><div class="score-detail"><span>AIスキル習得度</span><strong id="totalScore">--</strong><em>/100</em><b id="levelName">--</b><p id="levelComment">--</p></div></article>
+        <article class="large-card radar-card premium-card"><div class="card-title"><h3>スキル領域別バランス</h3><small>6領域</small></div><canvas id="radarCanvas" width="420" height="320" aria-label="スキル領域別レーダーチャート"></canvas></article>
+        <article class="large-card insight-card premium-card"><div class="card-title"><h3>活かせる領域</h3><small>強みから推定</small></div><ul id="useCaseList" class="check-list"></ul></article>
+      </div>
+      <div class="result-grid-two">
+        <article class="large-card premium-card"><div class="card-title"><h3>関心領域とのスキル差</h3><small>優先して伸ばす順</small></div><div id="gapList" class="gap-list"></div></article>
+        <article id="career" class="large-card value-card premium-card"><div class="card-title"><h3>報酬額・市場価値の参考表示</h3><small>保証ではなく参考情報</small></div><div id="valueEstimate" class="value-estimate"></div></article>
+      </div>
+      <article class="large-card learning-card premium-card"><div class="card-title"><h3>先に学ぶとよい順番</h3><small>スキル補強ロードマップ</small></div><ol id="learningPath" class="timeline"></ol></article>
+      <article id="courses" class="large-card course-section-card premium-card"><div class="card-title"><h3>あなたに合う講座</h3><small id="courseAudienceLabel">--</small></div><div id="courseRecommendations" class="course-grid"></div><div id="packageRecommendation" class="package-card"></div></article>
+      <article id="plan" class="large-card share-panel premium-card">
+        <div class="share-copy"><div class="section-label">Learning Plan</div><h3>学習プランを保存・共有</h3><p>診断結果、関心テーマ、推奨講座をまとめて送信できます。Googleフォームと連携すると、回答一覧に診断結果が蓄積されます。</p></div>
+        <form id="planForm" class="plan-form"><div class="field-grid"><label>お名前<input name="contactName" required type="text" placeholder="例：山田 太郎" /></label><label>メールアドレス<input name="email" required type="email" placeholder="sample@example.com" /></label><label>所属・学校・会社<input name="contactOrg" type="text" placeholder="例：〇〇株式会社 / 〇〇高校" /></label><label>希望する学習形式<select name="learningMode"><option>まずはオンデマンドで学びたい</option><option>オンラインLiveで学びたい</option><option>対面・ワークショップで学びたい</option><option>自社・学校向けに組み合わせたい</option></select></label></div><label>メモ・補足<textarea name="notes" rows="4" placeholder="例：営業部門で資料作成とExcel業務改善に活かしたい"></textarea></label><input type="hidden" name="diagnosisJson" /><div class="form-actions"><button class="secondary-action" type="button" id="copyPlan">学習プランをコピー</button><button class="primary-action" type="submit">学習プランを送信</button></div><p class="form-note" id="formNote">Googleフォーム未設定時はブラウザ内で送信デモとして保存されます。</p></form>
+      </article>
+    </section>
+
+    <footer id="settings" class="site-footer premium-card">
+      <p>本診断は学習・研修設計のための参考ツールです。DXリテラシー標準・DX推進スキル標準を参考に、AI活用に必要な領域を独自に再整理しています。</p>
+      <p class="footer-links"><a href="https://www.meti.go.jp/policy/it_policy/jinzai/skill_standard/main.html" target="_blank" rel="noreferrer">経済産業省 デジタルスキル標準</a><a href="https://www.ipa.go.jp/jinzai/skill-standard/dss/about.html" target="_blank" rel="noreferrer">IPA デジタルスキル標準</a></p>
+    </footer>
+  </main>
+
+  <template id="questionTemplate">
+    <article class="question-card">
+      <div class="question-meta"><span class="qno"></span><span class="qcategory"></span></div>
+      <h4></h4>
+      <div class="rating-row" role="radiogroup"></div>
+    </article>
+  </template>
+
+  <script src="./script.js"></script>
+</body>
+</html>
